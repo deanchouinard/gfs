@@ -10,13 +10,13 @@ timeout 30
 
 pid "/tmp/spree.Gfs.pid"
 
-if env = "production"
+if env == "production"
   
-  working_directory "/home/spree/Gfs/current"
+  working_directory "/home/spree/gfs/current"
 
   user 'spree'
 
-  shared_path = "/home/spree/Gfs/shared"
+  shared_path = "/home/spree/gfs/shared"
 
   stderr_path "#{shared_path}/log/unicorn.stderr.log"
   stdout_path "#{shared_path}/log/unicorn.stdout.log"
