@@ -13,7 +13,7 @@ set :bundle_cmd, 'source $HOME/.bash_profile && bundle'
 require "rvm/capistrano"
 
 
-set :application, "Mystore"
+set :application, "Gfs"
 set :repository,  "https://github.com/deanchouinard/gfs.git"
 
 set :scm, :git
