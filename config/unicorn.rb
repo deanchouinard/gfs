@@ -8,7 +8,7 @@ preload_app true
 
 timeout 30
 
-pid "/tmp/spree.Gfs.pid"
+pid "/tmp/unicorn.Gfs.pid"
 
 if env == "production"
   
