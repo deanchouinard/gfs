@@ -10,4 +10,8 @@
 //= require store/spree_core
 //= require store/spree_promo
 
+//= require  ../../../../vendor/assets/javascripts/jquery.tinycarousel.min
+
 //= require_tree .
+
+

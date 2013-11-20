@@ -56,5 +56,7 @@ gem 'spree_volume_pricing', :git => 'git://github.com/spree/spree_volume_pricing
 
 gem 'deface'
 
+gem 'spree_static_content', :github => 'spree/spree_static_content', :branch => '1-3-stable'
+
 # gem 'spree_flexi_variants', :git => 'git://github.com/jsqu99/spree_flexi_variants.git'
 
