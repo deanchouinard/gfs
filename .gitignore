@@ -16,3 +16,6 @@
 
 /public/spree/products/*
 
+# Ignore sass-cache files.
+*.sass-cache*
+

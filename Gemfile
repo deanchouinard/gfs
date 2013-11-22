@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.13'
+gem 'rails', '3.2.15'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -37,7 +37,7 @@ end
 
 # Use unicorn as the app server
 group :production do
-  gem 'unicorn'
+  #gem 'unicorn'
 end
 
 # Deploy with Capistrano
