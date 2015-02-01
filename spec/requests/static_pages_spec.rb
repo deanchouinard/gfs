@@ -8,4 +8,11 @@ describe "StaticPages" do
       response.status.should be(200)
     end
   end
+  
+  describe "Home page" do
+    it "deliberate error" do
+      visit "/"
+      page.should have_content('foo')
+    end
+  end
 end
