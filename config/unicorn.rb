@@ -2,13 +2,13 @@ env = ENV["RAILS_ENV"] || "development"
 
 worker_processes = 2
 
-listen "/tmp/Gfs.socket", backlog: 64
+listen "/tmp/gfs.socket", backlog: 64
 
 preload_app true
 
 timeout 30
 
-pid "/tmp/unicorn.Gfs.pid"
+pid "/tmp/unicorn.gfs.pid"
 
 if env == "production"
   
