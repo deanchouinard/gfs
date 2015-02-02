@@ -13,7 +13,7 @@ set :bundle_cmd, 'source $HOME/.bash_profile && bundle'
 require "rvm/capistrano"
 
 
-set :application, "Gfs"
+set :application, "gfs"
 set :repository,  "https://github.com/deanchouinard/gfs.git"
 
 set :scm, :git
@@ -48,7 +48,7 @@ after "bundle:install", "symlink_database_yml"
 namespace :unicorn do
   desc "Zero-downtime restart of Unicorn"
   task :restart, except: { no_release: true } do
-    run "kill -s USR2 `cat /tmp/unicorn.Gfs.pid`"
+    run "kill -s USR2 `cat /tmp/unicorn.gfs.pid`"
   end
 
   desc "Start unicorn"
@@ -58,7 +58,7 @@ namespace :unicorn do
 
   desc "Stop unicorn"
   task :stop, except: { no_release: true } do
-    run "kill -s QUIT `cat /tmp/unicorn.Gfs.pid`"
+    run "kill -s QUIT `cat /tmp/unicorn.gfs.pid`"
   end
 end
 
