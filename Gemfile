@@ -30,9 +30,9 @@ gem 'jquery-rails'
 
 
 group :development, :test do
-  gem "rspec-rails", ">= 2.0.1"
-  gem "capybara", "= 0.4.0"
-
+  gem "rspec-rails", ">= 2.11.1"
+#  gem "capybara", "= 0.4.0"
+  gem "capybara", ">= 2.2.0"
 end
 
 # Use unicorn as the app server
